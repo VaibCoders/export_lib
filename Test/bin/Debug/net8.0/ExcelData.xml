@@ -1,0 +1,1355 @@
+<?xml version="1.0" standalone="yes"?>
+<Results>
+  <xs:schema id="Results" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Results" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table_1" msdata:MinimumCapacity="43">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ISName" type="xs:string" minOccurs="0" />
+                <xs:element name="Note" type="xs:string" minOccurs="0" />
+                <xs:element name="Author" type="xs:string" minOccurs="0" />
+                <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Table_2" msdata:MinimumCapacity="61">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IDDB" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="IDServer" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="DBName" type="xs:string" minOccurs="0" />
+                <xs:element name="DBNameTest" type="xs:string" minOccurs="0" />
+                <xs:element name="Note" type="xs:string" minOccurs="0" />
+                <xs:element name="ServerType" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ServerName" type="xs:string" minOccurs="0" />
+                <xs:element name="ServerNameTest" type="xs:string" minOccurs="0" />
+                <xs:element name="ServerTypeName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShowOnInterface" type="xs:boolean" minOccurs="0" />
+                <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="IDAuthor" type="xs:int" minOccurs="0" />
+                <xs:element name="Author" type="xs:string" minOccurs="0" />
+                <xs:element name="ModifyDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="IDModifier" type="xs:int" minOccurs="0" />
+                <xs:element name="Modifier" type="xs:string" minOccurs="0" />
+                <xs:element name="ModifyLogin" type="xs:string" minOccurs="0" />
+                <xs:element name="isLogServer" type="xs:boolean" minOccurs="0" />
+                <xs:element name="isLogDB" type="xs:boolean" minOccurs="0" />
+                <xs:element name="isLog" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table_1>
+    <ISName>2018 Платформа PostgreSQL</ISName>
+    <Note>2018 Платформа PostgreSQL</Note>
+    <Author>Шибин В. А.</Author>
+    <CreateDate>2018-01-31T12:14:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>AdventureWorks 2012</ISName>
+    <Note>AdventureWorks 2012</Note>
+    <Author>Шибин В. А.</Author>
+    <CreateDate>2015-06-19T14:30:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>GlavGosExp</ISName>
+    <Note>GlavGosExp</Note>
+    <Author>Шибин В. А.</Author>
+    <CreateDate>2016-08-25T15:21:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>ITWorker</ISName>
+    <Note>Айтишник</Note>
+    <Author>Грабарь А. В.</Author>
+    <CreateDate>2016-06-06T11:15:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>ITWorker.Classic</ISName>
+    <Note>Айтишник. Классик</Note>
+    <Author>Грабарь А. В.</Author>
+    <CreateDate>2016-06-22T11:10:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>ITWorkerP</ISName>
+    <Note>Айтишник-Р (PostgresSQL)</Note>
+    <Author>Роговой Д. В.</Author>
+    <CreateDate>2018-02-13T16:49:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>JIRA</ISName>
+    <Note>JIRA</Note>
+    <Author>Горшков Д. А.</Author>
+    <CreateDate>2015-02-13T15:03:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>OLAP отчетность</ISName>
+    <Note>Сервис для работы с пользовательскими OLAP отчетами</Note>
+    <Author>Боровиков С. А.</Author>
+    <CreateDate>2013-11-26T12:24:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>OMS. События</ISName>
+    <Note>OMS. События</Note>
+    <Author>Горшков Д. А.</Author>
+    <CreateDate>2015-07-22T14:57:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>OMSт. Шаблоны и образы</ISName>
+    <Note>Технологическая система управления шаблонами и образами документов</Note>
+    <Author>Хецрон Д. В.</Author>
+    <CreateDate>2009-03-19T11:48:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>SoftMarket</ISName>
+    <Note>SoftMarket</Note>
+    <Author>Иванов А. Н.</Author>
+    <CreateDate>2011-01-20T17:11:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>SPARXX</ISName>
+    <Note>SPARXX</Note>
+    <Author>Шибин В. А.</Author>
+    <CreateDate>2018-04-17T17:59:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Web-версия Платформы</ISName>
+    <Note>Разработка Web-версии Платформы</Note>
+    <Author>Роговой Д. В.</Author>
+    <CreateDate>2020-12-02T11:18:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Web-версия Платформы. Тестирование объектов БЗ</ISName>
+    <Note>Модуль для тестирования работы ОБЗ в web-версии</Note>
+    <Author>Молочков В. В.</Author>
+    <CreateDate>2023-03-31T16:48:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Видеоконференции</ISName>
+    <Note>Модуль видеоконференций Платформы</Note>
+    <CreateDate>2021-12-20T19:37:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Платформа. I2</ISName>
+    <Note>Компонент I2</Note>
+    <CreateDate>2013-10-25T11:33:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Платформа. Web</ISName>
+    <Note>Модуль для работы с функционалом Платформы в WEB</Note>
+    <Author>Роговой Д. В.</Author>
+    <CreateDate>2024-04-11T12:33:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Платформа. Web. JSON</ISName>
+    <Note>Модуль для работы с функционалом Платформы в WEB. JSON</Note>
+    <Author>Роговой Д. В.</Author>
+    <CreateDate>2024-05-21T10:55:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Платформа. Workflow</ISName>
+    <Note>Технологическая система описания и управления Workflow</Note>
+    <Author>Фомин Д. В.</Author>
+    <CreateDate>2014-09-25T14:14:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Платформа. База знаний</ISName>
+    <Note>Технологическая система разработки Базы знаний</Note>
+    <CreateDate>2007-08-28T16:07:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Платформа. Сообщения</ISName>
+    <Note>Технологическая система управения сообщениями</Note>
+    <Author>Администратор И. А.</Author>
+    <CreateDate>2008-09-15T13:22:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Платформа. Универсальный веб-сервис</ISName>
+    <Note>Технологическая система управления универсальным веб-сервисом</Note>
+    <CreateDate>2008-03-13T17:28:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Портал ФМС</ISName>
+    <Note>Портал ФМС</Note>
+    <CreateDate>2015-05-05T14:23:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Портал. Демонстрация интерфейса</ISName>
+    <Note>Содержит интерфейс для тестирования, отладки и демонстрации возможностей web-платформы.</Note>
+    <Author>Середницкий А. С.</Author>
+    <CreateDate>2017-08-09T12:49:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Проектирование ИС</ISName>
+    <Note>Проектирование ИС</Note>
+    <CreateDate>2014-07-14T12:28:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Сайт платформы SherpStudio</ISName>
+    <Note>ИС управления контентом сайта платформы</Note>
+    <Author>Удалов М. А.</Author>
+    <CreateDate>2017-03-16T17:01:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Система управления организацией</ISName>
+    <Note>Система управления организацией</Note>
+    <Author>Роговой Д. В.</Author>
+    <CreateDate>2009-08-06T13:26:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Студия. Демонстрация интерфейса</ISName>
+    <Note>Демонстрация возможностей объектов интерфейса</Note>
+    <Author>Роговой Д. В.</Author>
+    <CreateDate>2014-07-02T13:25:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Студия. Примеры I2 на AdventureWorks2012</ISName>
+    <Note>Примеры использования компонента I2 на AdventureWorks2012</Note>
+    <Author>Фомин Д. В.</Author>
+    <CreateDate>2014-07-11T14:39:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Студия. Примеры для разработчиков</ISName>
+    <Note>Примеры использования интрефейса платформы</Note>
+    <Author>Роговой Д. В.</Author>
+    <CreateDate>2010-11-18T10:45:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Студия. Разработка</ISName>
+    <Note>Отладка функционала платформы</Note>
+    <Author>Иванов А. Н.</Author>
+    <CreateDate>2009-06-05T13:29:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Студия. Тестирование ошибок платформы</ISName>
+    <Note>Технологическая система для воспроизведения и устранения ошибок платформы</Note>
+    <Author>Горшков Д. А.</Author>
+    <CreateDate>2013-01-14T16:54:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Т90. Система телекоммуникаций</ISName>
+    <Note>Т90. Система телекоммуникаций</Note>
+    <Author>Роговой Д. В.</Author>
+    <CreateDate>2015-05-13T10:28:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Тестовая ИС для обучения</ISName>
+    <Note>Тестовая ИС для обучения</Note>
+    <Author>Шибин В. А.</Author>
+    <CreateDate>2017-04-10T16:17:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>УМКА</ISName>
+    <Note>УМмная коробКА</Note>
+    <Author>Хецрон Д. В.</Author>
+    <CreateDate>2016-04-08T12:50:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Учет автотранспорта компании</ISName>
+    <Note>ИС учета автотранспорта компании.</Note>
+    <Author>Удалов М. А.</Author>
+    <CreateDate>2017-04-11T14:36:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>ФИАС</ISName>
+    <Note>ФИАС</Note>
+    <Author>Горшков Д. А.</Author>
+    <CreateDate>2015-03-31T14:47:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>ШЕРП. Библиотека</ISName>
+    <Note>Система учета документов организации общего пользования</Note>
+    <Author>Шибин В. А.</Author>
+    <CreateDate>2008-06-23T14:28:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>ШЕРП. Реестр документов</ISName>
+    <Note>Реестр документов</Note>
+    <Author>Хецрон Д. В.</Author>
+    <CreateDate>2011-05-10T09:34:00+04:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>Эксплуатация ИС</ISName>
+    <Note>Система эксплуатации ИС организации</Note>
+    <Author>Хецрон Д. В.</Author>
+    <CreateDate>2018-01-30T17:44:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>ЯТест. Синхронизация ОБД. Модуль A</ISName>
+    <Note>Тест</Note>
+    <Author>Молочков В. В.</Author>
+    <CreateDate>2024-02-14T13:39:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>ЯТест. Синхронизация ОБД. Модуль B</ISName>
+    <Note>Тест</Note>
+    <Author>Молочков В. В.</Author>
+    <CreateDate>2024-02-14T13:39:00+03:00</CreateDate>
+  </Table_1>
+  <Table_1>
+    <ISName>ЯЯЯ_Тест_Выгрузки_Линков_датаблоков</ISName>
+    <Note>Тестовый модуль. Удалить в 2025</Note>
+    <Author>Молочков В. В.</Author>
+    <CreateDate>2024-11-14T12:51:00+03:00</CreateDate>
+  </Table_1>
+  <Table_2>
+    <IDDB>1e768cc3-66ee-492e-af36-6b8345b14a55</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>DEV</DBName>
+    <Note>База данных для разработки</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2007-09-13T11:20:00+04:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>9fd185a4-ab0b-44f5-8b9d-0aa5b1065d89</IDDB>
+    <IDServer>85c425d2-86d0-4a51-9fe1-e644fee10470</IDServer>
+    <DBName>TestDB</DBName>
+    <Note>База данных PostgreSQL</Note>
+    <ServerType>4</ServerType>
+    <ServerName>mars</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2015-09-21T14:56:00+03:00</CreateDate>
+    <ModifyDate>2015-10-01T17:04:05.657+03:00</ModifyDate>
+    <IDModifier>2000002840</IDModifier>
+    <Modifier>Иванов А. Н.</Modifier>
+    <ModifyLogin>FORMULABI\Ivanov-AN</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>338ff2fa-ab5c-4c19-b9fd-cac345b621c5</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>Designer</DBName>
+    <Note>Проектирование ИС</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2014-07-14T12:45:00+04:00</CreateDate>
+    <ModifyDate>2018-01-30T18:23:09.007+03:00</ModifyDate>
+    <IDModifier>-482</IDModifier>
+    <Modifier>Хецрон Д. В.</Modifier>
+    <ModifyLogin>FORMULABI\Hetsron</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>7c50efba-4395-403a-9421-8cb60958b843</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>Images</DBName>
+    <Note>База данных образов документов</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2008-04-14T16:19:00+04:00</CreateDate>
+    <IDAuthor>-482</IDAuthor>
+    <Author>Хецрон Д. В.</Author>
+    <ModifyDate>2008-04-14T16:27:00.833+04:00</ModifyDate>
+    <IDModifier>-482</IDModifier>
+    <Modifier>Хецрон Д. В.</Modifier>
+    <ModifyLogin>ROSIM\dvk</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>3162e5a1-6af9-4e5c-89a5-e74b56328b09</IDDB>
+    <IDServer>0ff28610-e081-475f-a10d-6c7f95990fe7</IDServer>
+    <DBName>postgres</DBName>
+    <Note>postgres</Note>
+    <ServerType>4</ServerType>
+    <ServerName>AIvanov.Sherp-Soft.sherpgroup.local</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2023-08-09T17:01:00+03:00</CreateDate>
+    <IDAuthor>2000002840</IDAuthor>
+    <Author>Иванов А. Н.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>04cb5905-d00f-4a76-8c1f-d969637cfc89</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>Library</DBName>
+    <Note>Библиотека документов</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2008-06-23T14:39:00+04:00</CreateDate>
+    <IDAuthor>3</IDAuthor>
+    <Author>Шибин В. А.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>e108591e-36f5-461e-82c6-7432be90a44a</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>KB_PGS</DBName>
+    <Note>KB PostgreSQL</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2020-12-25T13:33:00+03:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>93067cf5-841f-4020-90b4-6a8f2b535aeb</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>SmartBox</DBName>
+    <Note>БД УМная коробКА</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2016-04-28T08:59:00+03:00</CreateDate>
+    <IDAuthor>-482</IDAuthor>
+    <Author>Хецрон Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>7925d9df-c1a9-4d4b-b425-2a1e30e0b305</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>UWS</DBName>
+    <Note>База универсального web-сервиса</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2008-03-13T17:28:00+03:00</CreateDate>
+    <ModifyDate>2008-09-11T16:58:34.58+04:00</ModifyDate>
+    <IDModifier>2000003772</IDModifier>
+    <Modifier>Администратор И. А.</Modifier>
+    <ModifyLogin>ROSIM\ivanov_a_n</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>949e8ea1-1cab-497f-809a-bf52ff518142</IDDB>
+    <IDServer>ca3589b2-f93f-4bb9-91a2-fe0d2c93b306</IDServer>
+    <DBName xml:space="preserve"> </DBName>
+    <Note>Тестовая БД Hana</Note>
+    <ServerType>5</ServerType>
+    <ServerName>195.210.191.250:31015</ServerName>
+    <ServerTypeName>Hana</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2016-05-23T16:07:00+03:00</CreateDate>
+    <IDAuthor>2000002840</IDAuthor>
+    <Author>Иванов А. Н.</Author>
+    <ModifyDate>2016-05-23T17:02:04.673+03:00</ModifyDate>
+    <IDModifier>2000002840</IDModifier>
+    <Modifier>Иванов А. Н.</Modifier>
+    <ModifyLogin>FORMULABI\Ivanov-AN</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>e9ac1070-76d9-4481-bc01-54e497113bac</IDDB>
+    <IDServer>7aab4426-4e5b-4777-bd1d-fb286bef1151</IDServer>
+    <DBName>ElectroLight</DBName>
+    <Note>РАССВЕТ. БД для учета объектов энергетики</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN\RN</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2009-12-01T10:25:00+03:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <ModifyDate>2020-11-24T11:25:15.877+03:00</ModifyDate>
+    <IDModifier>2000003777</IDModifier>
+    <Modifier>Горшков Д. А.</Modifier>
+    <ModifyLogin>FORMULABI\Gorshkov</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>753affc1-9b7f-418f-b88f-ac221aa772b9</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>Messaging</DBName>
+    <Note>Система сообщений</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2008-09-15T16:46:00+04:00</CreateDate>
+    <IDAuthor>2000003772</IDAuthor>
+    <Author>Администратор И. А.</Author>
+    <ModifyDate>2022-03-29T15:26:58.58+03:00</ModifyDate>
+    <IDModifier>2000002840</IDModifier>
+    <Modifier>Иванов А. Н.</Modifier>
+    <ModifyLogin>FORMULABI\Ivanov-AN</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>3df8f6f5-4a64-4db6-933f-4d888ce53a58</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>GlavGosExp</DBName>
+    <Note>GlavGosExp</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2016-08-25T15:21:00+03:00</CreateDate>
+    <IDAuthor>3</IDAuthor>
+    <Author>Шибин В. А.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>106afbd4-d95f-4d33-bcc1-5a3502323c5a</IDDB>
+    <IDServer>b217dc53-de3a-41fa-b925-e24ab29ee60a</IDServer>
+    <DBName>KB</DBName>
+    <Note>Через ODBC</Note>
+    <ServerType>6</ServerType>
+    <ServerName>URAN\DEV</ServerName>
+    <ServerTypeName>ODBC</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2017-02-01T17:36:00+03:00</CreateDate>
+    <IDAuthor>2000002840</IDAuthor>
+    <Author>Иванов А. Н.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>3d22195e-d61a-4620-87de-a11001a541f2</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>PortalDemo</DBName>
+    <Note>Тестирование, отладка и демонстрация возможностей web-платформы.</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2017-08-09T12:56:00+03:00</CreateDate>
+    <IDAuthor>2000003770</IDAuthor>
+    <Author>Середницкий А. С.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>485bddc7-fe94-4531-a143-bd44b4e922d9</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>Exploitation</DBName>
+    <Note>Эксплуатация ИС</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2018-01-30T17:39:00+03:00</CreateDate>
+    <IDAuthor>-482</IDAuthor>
+    <Author>Хецрон Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>650e182a-ba3a-4e84-a285-535aba6e8f6a</IDDB>
+    <IDServer>85c425d2-86d0-4a51-9fe1-e644fee10470</IDServer>
+    <DBName>ITWorkerP</DBName>
+    <Note>Айтишник-P</Note>
+    <ServerType>4</ServerType>
+    <ServerName>mars</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2018-02-13T17:11:00+03:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>2fc17a9a-35e3-4084-bb9e-ddd37152ace1</IDDB>
+    <IDServer>0cc9f1a6-862a-463d-862e-8b22992b173f</IDServer>
+    <DBName>ArchitectEnterprise</DBName>
+    <Note>ArchitectEnterprise</Note>
+    <ServerType>4</ServerType>
+    <ServerName>SRV-DEV</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2018-04-17T17:48:00+03:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <ModifyDate>2018-04-17T17:56:48.86+03:00</ModifyDate>
+    <IDModifier>643</IDModifier>
+    <Modifier>Роговой Д. В.</Modifier>
+    <ModifyLogin>FORMULABI\Rogovoj</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>b79aceac-118f-42cc-8f5d-71a2f7391e5e</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>WorkFlow</DBName>
+    <Note>СЭД</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2012-03-23T17:00:00+04:00</CreateDate>
+    <ModifyDate>2014-07-17T12:35:38.943+04:00</ModifyDate>
+    <IDModifier>2000008662</IDModifier>
+    <Modifier>Храпов М. Д.</Modifier>
+    <ModifyLogin>FORMULABI\Shibin-SA</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>722afa7d-f4a5-4e6f-a0fd-fd516b002ed3</IDDB>
+    <IDServer>cdf603e4-cdbb-4ee2-8f82-130de9c50790</IDServer>
+    <DBName>messaging</DBName>
+    <Note>KB PostgreSQL</Note>
+    <ServerType>4</ServerType>
+    <ServerName>uran</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2021-04-16T13:59:00+03:00</CreateDate>
+    <IDAuthor>2000002840</IDAuthor>
+    <Author>Иванов А. Н.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>c1a559ca-668e-4b30-a9e4-625721532788</IDDB>
+    <IDServer>63e37578-5e6b-41c8-999c-82e1a3b27727</IDServer>
+    <DBName>WideWorldImporters</DBName>
+    <Note>WideWorldImporters</Note>
+    <ServerType>0</ServerType>
+    <ServerName>SATURN\DEVHAB</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2018-10-10T10:23:00+03:00</CreateDate>
+    <IDAuthor>2000003777</IDAuthor>
+    <Author>Горшков Д. А.</Author>
+    <ModifyDate>2020-11-24T11:25:43.82+03:00</ModifyDate>
+    <IDModifier>2000003777</IDModifier>
+    <Modifier>Горшков Д. А.</Modifier>
+    <ModifyLogin>FORMULABI\Gorshkov</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>43160aa4-f3fb-4a99-a00f-a37b62d9a46e</IDDB>
+    <IDServer>63e37578-5e6b-41c8-999c-82e1a3b27727</IDServer>
+    <DBName>WideWorldImportersDW</DBName>
+    <Note>WideWorldImportersDW</Note>
+    <ServerType>0</ServerType>
+    <ServerName>SATURN\DEVHAB</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2018-10-10T10:23:00+03:00</CreateDate>
+    <IDAuthor>2000003777</IDAuthor>
+    <Author>Горшков Д. А.</Author>
+    <ModifyDate>2020-11-24T11:25:37.55+03:00</ModifyDate>
+    <IDModifier>2000003777</IDModifier>
+    <Modifier>Горшков Д. А.</Modifier>
+    <ModifyLogin>FORMULABI\Gorshkov</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>3b50ea1d-7ca5-4956-89dd-c1b4b32d1e48</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>OlapReport</DBName>
+    <Note>Сервис для пользовательских OLAP отчетов</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2013-11-26T12:47:00+04:00</CreateDate>
+    <IDAuthor>2000008736</IDAuthor>
+    <Author>Боровиков С. А.</Author>
+    <ModifyDate>2014-03-18T12:14:57.087+04:00</ModifyDate>
+    <ModifyLogin>ANALITIC\orion-Grabar</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>942439ae-2319-4584-bd18-41336b2963ac</IDDB>
+    <IDServer>3964b92e-5fac-45c6-99ab-2245e15c7936</IDServer>
+    <DBName>FORS</DBName>
+    <Note>FORS</Note>
+    <ServerType>1</ServerType>
+    <ServerName>RFM DEV ORA</ServerName>
+    <ServerTypeName>Oracle Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2018-11-27T15:47:00+03:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <ModifyDate>2023-04-18T14:25:15.033+03:00</ModifyDate>
+    <IDModifier>2000002840</IDModifier>
+    <Modifier>Иванов А. Н.</Modifier>
+    <ModifyLogin>SHERP-SOFT\Ivanov.A</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>c0c29917-1311-43e6-9597-877a53d69b85</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>ITWorker</DBName>
+    <Note>БД Айтишник</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2016-04-05T11:55:00+03:00</CreateDate>
+    <ModifyDate>2016-06-08T15:03:55.88+03:00</ModifyDate>
+    <IDModifier>643</IDModifier>
+    <Modifier>Роговой Д. В.</Modifier>
+    <ModifyLogin>FORMULABI\Rogovoj</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>609ad866-003e-498a-bd87-6ef998696284</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>KB</DBName>
+    <Note>База знаний</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2007-08-28T14:06:00+04:00</CreateDate>
+    <ModifyDate>2020-12-07T11:14:37.67+03:00</ModifyDate>
+    <IDModifier>2000003777</IDModifier>
+    <Modifier>Горшков Д. А.</Modifier>
+    <ModifyLogin>FORMULABI\Gorshkov</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>02a2fa94-99fa-422b-bf36-29e5fe84bdea</IDDB>
+    <IDServer>0aacb9f4-235b-480d-a111-20302f6bfe4a</IDServer>
+    <DBName>RegisterCompany</DBName>
+    <Note>RegisterCompany</Note>
+    <ServerType>0</ServerType>
+    <ServerName>SATURN\SGC</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2017-01-17T11:46:00+03:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>68b434c0-c5b6-4f6d-aaa6-1e52ffd28790</IDDB>
+    <IDServer>b3911293-29a7-4e33-971d-718a47a9d095</IDServer>
+    <DBName>C:\FIREBIRD_DATA\DEMO_DB.FDB</DBName>
+    <Note>Демо</Note>
+    <ServerType>7</ServerType>
+    <ServerName>rdr-vekp.radarias.local</ServerName>
+    <ServerTypeName>Firebird</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2017-02-01T16:40:00+03:00</CreateDate>
+    <IDAuthor>2000002840</IDAuthor>
+    <Author>Иванов А. Н.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>c2e7f0a9-d140-4276-8736-02c014b3a58c</IDDB>
+    <IDServer>cdf603e4-cdbb-4ee2-8f82-130de9c50790</IDServer>
+    <DBName>kb</DBName>
+    <Note>KB PostgreSQL</Note>
+    <ServerType>4</ServerType>
+    <ServerName>uran</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2021-02-19T17:41:00+03:00</CreateDate>
+    <IDAuthor>2000008645</IDAuthor>
+    <Author>Молочков В. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>053503d7-c048-4087-9c9f-23f5e553e9f7</IDDB>
+    <IDServer>1a7d1f0c-4f01-48bb-835d-1987c6e148b0</IDServer>
+    <DBName>energy</DBName>
+    <Note>РН-Юганскнефтегаз</Note>
+    <ServerType>4</ServerType>
+    <ServerName>srv-altlinux</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2018-09-24T15:43:00+03:00</CreateDate>
+    <ModifyDate>2018-09-24T15:49:14.937+03:00</ModifyDate>
+    <ModifyLogin>FORMULABI\SLyubich</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>73f96116-53e9-417e-9c58-7d3d546d6a85</IDDB>
+    <IDServer>64ca80eb-7c5c-44ab-9757-b82520ec744d</IDServer>
+    <DBName>BRadar</DBName>
+    <Note>Бухгалтерия</Note>
+    <ServerType>0</ServerType>
+    <ServerName>srv-1CIT.formulabi.local\B1CTEST</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2020-02-27T13:46:00+03:00</CreateDate>
+    <IDAuthor>2000002840</IDAuthor>
+    <Author>Иванов А. Н.</Author>
+    <ModifyDate>2020-09-25T14:39:45.397+03:00</ModifyDate>
+    <IDModifier>2000002840</IDModifier>
+    <Modifier>Иванов А. Н.</Modifier>
+    <ModifyLogin>FORMULABI\Ivanov-AN</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>c39b0355-4db4-4075-aa50-c7391dbc639f</IDDB>
+    <IDServer>8c4eb55e-df69-485d-91b5-577b1c559223</IDServer>
+    <DBName>msdb</DBName>
+    <Note>master</Note>
+    <ServerType>0</ServerType>
+    <ServerName>rdr-amldev\devco</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2020-02-27T13:57:00+03:00</CreateDate>
+    <IDAuthor>2000002840</IDAuthor>
+    <Author>Иванов А. Н.</Author>
+    <ModifyDate>2020-11-24T11:25:50.007+03:00</ModifyDate>
+    <IDModifier>2000003777</IDModifier>
+    <Modifier>Горшков Д. А.</Modifier>
+    <ModifyLogin>FORMULABI\Gorshkov</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>1eb4c84e-f118-41fe-a5dc-004ae97e5348</IDDB>
+    <IDServer>33b5991c-710a-4e96-9050-abf44f7a92c4</IDServer>
+    <DBName>kb_20210407_rest1</DBName>
+    <Note>Тестовая БД</Note>
+    <ServerType>4</ServerType>
+    <ServerName>wks-nb02r.radar-ias.sherpgroup.local</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2021-04-30T23:44:00+03:00</CreateDate>
+    <IDAuthor>2000008645</IDAuthor>
+    <Author>Молочков В. В.</Author>
+    <ModifyDate>2021-05-01T14:45:56.997+03:00</ModifyDate>
+    <IDModifier>2000008645</IDModifier>
+    <Modifier>Молочков В. В.</Modifier>
+    <ModifyLogin>RADAR-IAS\Molochkov.V</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>3a0e8f8f-9bc5-4080-b70e-54c57fddfefb</IDDB>
+    <IDServer>cdf603e4-cdbb-4ee2-8f82-130de9c50790</IDServer>
+    <DBName>demo</DBName>
+    <Note>Демонстрационная БД PostgresPro - авиаперелёты</Note>
+    <ServerType>4</ServerType>
+    <ServerName>uran</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2021-05-31T11:36:00+03:00</CreateDate>
+    <IDAuthor>2000008645</IDAuthor>
+    <Author>Молочков В. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>3db1b453-a533-4f71-ab63-1f2c1ae9a953</IDDB>
+    <IDServer>cdf603e4-cdbb-4ee2-8f82-130de9c50790</IDServer>
+    <DBName>testdb01</DBName>
+    <Note>Тестовая БД</Note>
+    <ServerType>4</ServerType>
+    <ServerName>uran</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2021-07-07T09:10:00+03:00</CreateDate>
+    <IDAuthor>2000008645</IDAuthor>
+    <Author>Молочков В. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>cf4f2a20-526b-47ef-8bdb-4c4d9b35c99e</IDDB>
+    <IDServer>2350ce95-f955-4f24-9c3c-f8e26c4253ad</IDServer>
+    <DBName>test</DBName>
+    <Note>Тестовая БД</Note>
+    <ServerType>6</ServerType>
+    <ServerName>192.168.1.200</ServerName>
+    <ServerTypeName>ODBC</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2021-08-05T17:57:00+03:00</CreateDate>
+    <IDAuthor>2000002840</IDAuthor>
+    <Author>Иванов А. Н.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>836f47da-aad3-468b-8e53-a9c6faf59a34</IDDB>
+    <IDServer>1f48b34a-96d8-4ba5-9729-8277362060c9</IDServer>
+    <DBName>z_test01</DBName>
+    <Note>Тестовая БД. Удалить и её и сервер после 2021-10-01 МВВ</Note>
+    <ServerType>4</ServerType>
+    <ServerName>192.168.1.124</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2021-09-16T13:48:00+03:00</CreateDate>
+    <IDAuthor>2000008645</IDAuthor>
+    <Author>Молочков В. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>7b034189-8f42-42c1-a3ea-3ba5c04ef574</IDDB>
+    <IDServer>413b1fe9-6c8c-4b4c-8e1c-a716e5eb78e7</IDServer>
+    <DBName>KB</DBName>
+    <Note>База знаний</Note>
+    <ServerType>0</ServerType>
+    <ServerName>SRV-LG01G.sherpgroup.local\LG</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2022-02-16T11:09:00+03:00</CreateDate>
+    <IDAuthor>2000002840</IDAuthor>
+    <Author>Иванов А. Н.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>63de4e20-d72f-454f-a6a1-635e44ddd7ab</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>TestDB01</DBName>
+    <Note>Тестовая БД. 2022-02-18 МВВ</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2022-02-18T08:09:00+03:00</CreateDate>
+    <IDAuthor>2000008645</IDAuthor>
+    <Author>Молочков В. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>f2242118-9f70-401e-a11b-4304fcb5214f</IDDB>
+    <IDServer>e397e5b5-4bc6-43aa-895c-6b766a41b469</IDServer>
+    <DBName>corpmanagement</DBName>
+    <Note>corpmanagement</Note>
+    <ServerType>4</ServerType>
+    <ServerName>SRV-DEV01C.sherpgroup.local</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2022-01-20T14:09:00+03:00</CreateDate>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>994e01da-8c91-41ed-af79-5d185a169293</IDDB>
+    <IDServer>0497e26d-3d53-44a7-a0d5-bebd411a438f</IDServer>
+    <DBName>ztest01</DBName>
+    <Note>SRV-DEV01G. Тестовая БД 01</Note>
+    <ServerType>4</ServerType>
+    <ServerName>SRV-DEV01G External (PG)</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2022-06-24T09:36:00+03:00</CreateDate>
+    <IDAuthor>2000008645</IDAuthor>
+    <Author>Молочков В. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>1a7e1e05-9e16-4d1c-b989-117379e32c73</IDDB>
+    <IDServer>8c12856a-81f5-4b80-99a6-0993a79d460d</IDServer>
+    <DBName>kb</DBName>
+    <Note>БД платформы на PG</Note>
+    <ServerType>4</ServerType>
+    <ServerName>SRV-DEV04G.sherpgroup.local</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2023-12-22T21:03:00+03:00</CreateDate>
+    <IDAuthor>2000008639</IDAuthor>
+    <Author>Журиков Д. О.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>true</isLogDB>
+    <isLog>true</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>841d8f30-0954-4018-9129-769451c8f30d</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>OMS</DBName>
+    <Note>БД единой учетной системы организации</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2009-08-06T14:02:00+04:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>46afbe31-d738-407c-a504-508ae10be430</IDDB>
+    <IDServer>c2837afa-f7aa-41ae-a942-497aaccf45be</IDServer>
+    <DBName>accounting</DBName>
+    <Note>Взиморасчеты</Note>
+    <ServerType>4</ServerType>
+    <ServerName>192.168.24.13</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2022-08-10T10:21:00+03:00</CreateDate>
+    <ModifyDate>2024-04-05T16:57:39.39+03:00</ModifyDate>
+    <IDModifier>2000003777</IDModifier>
+    <Modifier>Горшков Д. А.</Modifier>
+    <ModifyLogin>FORMULA-BI\Gorshkov.D</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>f69b49d9-fe0f-4340-b47c-30260411e6f7</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>AdventureWorks</DBName>
+    <Note>БД AdventureWorks для примеров интрефейса</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2010-11-18T11:27:00+03:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>95b91fdf-de33-4e20-bfaa-7785ff3796e6</IDDB>
+    <IDServer>c9086442-32e3-4bd5-a1c3-2aae8bfdee26</IDServer>
+    <DBName>Saperion</DBName>
+    <Note>База данных ЭлАр (Saperion)</Note>
+    <ServerType>0</ServerType>
+    <ServerName>vm-db04</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2011-05-13T09:29:00+04:00</CreateDate>
+    <IDAuthor>-482</IDAuthor>
+    <Author>Хецрон Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>9c0db0f8-bf50-424c-8056-e7eb08ee5436</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>FirstSteps</DBName>
+    <Note>Для тестирования сотрудников</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2013-01-14T16:55:00+04:00</CreateDate>
+    <IDAuthor>2000003777</IDAuthor>
+    <Author>Горшков Д. А.</Author>
+    <ModifyDate>2013-01-14T17:10:36.727+04:00</ModifyDate>
+    <IDModifier>2000003777</IDModifier>
+    <Modifier>Горшков Д. А.</Modifier>
+    <ModifyLogin>FORMULABI\Gorshkov</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>a02ff25e-9a41-4ec4-832b-37e87c5a488d</IDDB>
+    <IDServer>84e4bb5d-1636-40d3-9021-7745a2482123</IDServer>
+    <DBName>WHMFCP</DBName>
+    <Note>БД Минтранс МФЦП</Note>
+    <ServerType>1</ServerType>
+    <ServerName>MARS</ServerName>
+    <ServerTypeName>Oracle Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2013-02-20T11:48:00+04:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>7d0e2c5d-4eb0-4504-b16e-ac7f5d2c6ccf</IDDB>
+    <IDServer>84e4bb5d-1636-40d3-9021-7745a2482123</IDServer>
+    <DBName>FMS</DBName>
+    <Note>БД ФМС</Note>
+    <ServerType>1</ServerType>
+    <ServerName>MARS</ServerName>
+    <ServerTypeName>Oracle Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2013-07-29T18:25:00+04:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>649d7988-0b79-4e9b-8cb5-d635328fcadb</IDDB>
+    <IDServer>7aab4426-4e5b-4777-bd1d-fb286bef1151</IDServer>
+    <DBName>CustomerService</DBName>
+    <Note>ЛКК</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN\RN</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2014-06-24T12:50:00+04:00</CreateDate>
+    <IDAuthor>2000008634</IDAuthor>
+    <Author>Сергеев</Author>
+    <ModifyDate>2020-11-24T11:25:09.93+03:00</ModifyDate>
+    <IDModifier>2000003777</IDModifier>
+    <Modifier>Горшков Д. А.</Modifier>
+    <ModifyLogin>FORMULABI\Gorshkov</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>60102246-054f-4dee-98fb-dd451b85abfa</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>i2_kb</DBName>
+    <Note>База метаданных i2</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2014-07-09T09:32:00+04:00</CreateDate>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>9501f552-bd81-4c18-a0f3-4bfa6fedaba4</IDDB>
+    <IDServer>413b1fe9-6c8c-4b4c-8e1c-a716e5eb78e7</IDServer>
+    <DBName>AdventureWorks2012</DBName>
+    <Note>AdventureWorks2012</Note>
+    <ServerType>0</ServerType>
+    <ServerName>SRV-LG01G.sherpgroup.local\LG</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2014-07-11T14:03:00+04:00</CreateDate>
+    <IDAuthor>2000008660</IDAuthor>
+    <Author>Фомин Д. В.</Author>
+    <ModifyDate>2020-07-09T13:50:00.81+03:00</ModifyDate>
+    <IDModifier>3</IDModifier>
+    <Modifier>Шибин В. А.</Modifier>
+    <ModifyLogin>FORMULABI\shibin</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>df332ffc-0fac-467e-92a5-cf1633535df7</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>OlapReport</DBName>
+    <Note>БД Olap отчетности</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2014-07-11T11:54:00+04:00</CreateDate>
+    <IDAuthor>2000008660</IDAuthor>
+    <Author>Фомин Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>6cba1b60-7b5b-4986-8f6b-70911cb96683</IDDB>
+    <IDServer>a70d3a05-0796-40b7-a755-e1350ebe881c</IDServer>
+    <DBName>CorpManagement</DBName>
+    <Note>База Данных корпоративного управления</Note>
+    <ServerType>0</ServerType>
+    <ServerName>SATURN\BAZEL1</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2014-12-10T11:30:00+03:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>859163ee-515f-44dc-bc98-69a287e2f866</IDDB>
+    <IDServer>a70d3a05-0796-40b7-a755-e1350ebe881c</IDServer>
+    <DBName>Stem</DBName>
+    <Note>БД компаний</Note>
+    <ServerType>0</ServerType>
+    <ServerName>SATURN\BAZEL1</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2014-12-10T11:31:00+03:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>06f5c16f-97b7-4a1c-840b-91ce3635dfbe</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>WF</DBName>
+    <Note>База данных процессов</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2014-09-22T14:42:00+04:00</CreateDate>
+    <IDAuthor>2000008660</IDAuthor>
+    <Author>Фомин Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>a259c87f-808e-4340-81ea-fe55f6e5139f</IDDB>
+    <IDServer>a876a00a-ce64-405c-9590-145963811762</IDServer>
+    <DBName>SoftMarket</DBName>
+    <Note>Исследование рынка софта</Note>
+    <ServerType>0</ServerType>
+    <ServerName>mars\sql2012</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2011-01-20T17:32:00+03:00</CreateDate>
+    <IDAuthor>2000003805</IDAuthor>
+    <Author>Фролов А. В.</Author>
+    <ModifyDate>2020-09-25T14:40:23.49+03:00</ModifyDate>
+    <IDModifier>2000002840</IDModifier>
+    <Modifier>Иванов А. Н.</Modifier>
+    <ModifyLogin>FORMULABI\Ivanov-AN</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>f6b63d34-71d3-4b2b-b617-8f6142f8f8f0</IDDB>
+    <IDServer>85c425d2-86d0-4a51-9fe1-e644fee10470</IDServer>
+    <DBName>biblio</DBName>
+    <Note>Тестовая библиотека</Note>
+    <ServerType>4</ServerType>
+    <ServerName>mars</ServerName>
+    <ServerTypeName>PostgreSQL</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2018-02-01T15:25:00+03:00</CreateDate>
+    <IDAuthor>2000002840</IDAuthor>
+    <Author>Иванов А. Н.</Author>
+    <ModifyDate>2018-02-01T15:24:56.61+03:00</ModifyDate>
+    <IDModifier>2000002840</IDModifier>
+    <Modifier>Иванов А. Н.</Modifier>
+    <ModifyLogin>FORMULABI\Ivanov-AN</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>df496808-9def-4453-af74-985ef8fe5c01</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>FIAS</DBName>
+    <Note>FIAS</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>true</ShowOnInterface>
+    <CreateDate>2015-04-01T10:54:00+03:00</CreateDate>
+    <IDAuthor>2000003777</IDAuthor>
+    <Author>Горшков Д. А.</Author>
+    <ModifyDate>2015-12-18T10:48:10.02+03:00</ModifyDate>
+    <IDModifier>643</IDModifier>
+    <Modifier>Роговой Д. В.</Modifier>
+    <ModifyLogin>FORMULABI\Rogovoj</ModifyLogin>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>3f3aace1-9c9a-427b-84ff-55987207f827</IDDB>
+    <IDServer>7d5fd76f-1ab0-4ea5-96be-e581139690b8</IDServer>
+    <DBName>DEMO_DB</DBName>
+    <Note>БД InfoClinic (FireBird)</Note>
+    <ServerType>2</ServerType>
+    <ServerName>rdr-vekp.radarias.local</ServerName>
+    <ServerTypeName>OLEDB</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2017-01-27T11:31:00+03:00</CreateDate>
+    <IDAuthor>643</IDAuthor>
+    <Author>Роговой Д. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+  <Table_2>
+    <IDDB>55dece64-d4b7-495a-bb2f-ee2ea1ec6299</IDDB>
+    <IDServer>32c49554-6855-4a0b-95b4-b891575c833f</IDServer>
+    <DBName>ZZZTestObjDbSync2024</DBName>
+    <Note>Тестовая БД для проверки синхронизации объектов БД</Note>
+    <ServerType>0</ServerType>
+    <ServerName>URAN.formulabi.local\DEV</ServerName>
+    <ServerTypeName>SQL Server</ServerTypeName>
+    <ShowOnInterface>false</ShowOnInterface>
+    <CreateDate>2024-02-14T13:37:00+03:00</CreateDate>
+    <IDAuthor>2000008645</IDAuthor>
+    <Author>Молочков В. В.</Author>
+    <isLogServer>false</isLogServer>
+    <isLogDB>false</isLogDB>
+    <isLog>false</isLog>
+  </Table_2>
+</Results>
