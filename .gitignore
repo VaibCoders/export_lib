@@ -1,2 +1,6 @@
-/ExcelUtils/bin/Debug
-/ExcelUtils/obj
+.vs
+.vscode
+bin
+obj
+*.user
+publish
