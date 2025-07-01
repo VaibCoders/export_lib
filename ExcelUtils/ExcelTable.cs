@@ -288,9 +288,7 @@ namespace ExcelUtils
                 {
                     if (GroupStart != 0)
                     {
-                        //Sheet?.Rows(GroupStart, row - 1).Group(false);
                         Groups.Add(GroupStart, row - 1);
-                        Debug.WriteLine($"{GroupStart}:{row - 1}");
                     }
                     GroupValueLast = Table.Rows[r][colTable];
                     Sheet?.Row(row).InsertRowsAbove(1);
@@ -299,8 +297,10 @@ namespace ExcelUtils
                     if (Sheet != null)
                     {
                         Sheet.Cell(row, col).SetValue($"{GroupCol}: {value}");
-                        Sheet.Cell(row, col).Style.Font.Bold = true;
-                        Sheet.Range(row, col, row, LastColumnIndex).Style.Fill.BackgroundColor = XLColor.FromColor(Color.LightGray);
+                        //Sheet.Cell(row, col).Style.Font.Bold = true;
+                        FormatingAplly(Sheet.Range(row, col, row, LastColumnIndex), ti.FormatingGroups);
+                        //Sheet.Range(row, col, row, LastColumnIndex).Style.Font.Bold = true;
+                        //Sheet.Range(row, col, row, LastColumnIndex).Style.Fill.BackgroundColor = XLColor.FromColor(Color.LightGray);
                         Sheet.Range(row, col, row, LastColumnIndex).Style.Border.SetOutsideBorder(XLBorderStyleValues.Thin);
                     }
                     row = row + 1;
@@ -330,9 +330,7 @@ namespace ExcelUtils
             }
             if (Table.Rows.Count > 0)
             {
-                //Sheet?.Rows(GroupStart, row - 1).Group(false);
                 Groups.Add(GroupStart, row - 1);
-                Debug.WriteLine($"{GroupStart}:{row - 1}");
             }
             return RowsAdded;
         }

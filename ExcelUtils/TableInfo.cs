@@ -12,6 +12,7 @@ namespace ExcelUtils
             Columns = new List<ColumnInfo>();
             Groups = new List<string>();
             ConditionFormattings = new List<ConditionFormattingTableInfo>();
+            FormatingGroups = new FormatInfo();
         }
 
         /// <summary>Условное форматирование таблицы</summary>
@@ -63,6 +64,9 @@ namespace ExcelUtils
             /// <summary>Столбец цель. Если не задан, то форматирование применяется ко всей строке</summary>
             public string? TargetColumn { get; set; }
         }
+
+        /// <summary>Формат столбцов группировки</summary>
+        public FormatInfo FormatingGroups { get; set; }
 
         public enum Conditions : int
         {

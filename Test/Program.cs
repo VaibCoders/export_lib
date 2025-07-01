@@ -1,4 +1,5 @@
-﻿using ExcelUtils;
+﻿using ClosedXML.Excel;
+using ExcelUtils;
 using System.Data;
 using System.Drawing;
 using System.Reflection;
@@ -51,6 +52,10 @@ public class Program
         ti.Groups.Add("ServerTypeName");
         ti.Groups.Add("ServerName");
         ti.Groups.Add("Author");
+
+        // формат столбцов группировки
+        ti.FormatingGroups.FontBold = true;
+        ti.FormatingGroups.FillColor = Color.LightGray.ToArgb();
 
         // цикл по опсанию столбцов
         foreach (var ci in ti.Columns)

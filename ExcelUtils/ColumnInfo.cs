@@ -34,7 +34,7 @@
 
         /// <summary>Формат ячеек столбца</summary>
         public FormatInfo Formating { get; set; }
-        /// <summary>Формат заголовок столбца</summary>
+        /// <summary>Формат заголовка столбца</summary>
         public FormatInfo FormatingHeader { get; set; }
 
         /// <summary>Итоги столбцов</summary>
