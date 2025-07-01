@@ -1,5 +1,4 @@
-﻿using ClosedXML.Excel;
-using ExcelUtils;
+﻿using ExcelUtils;
 using System.Data;
 using System.Drawing;
 using System.Reflection;
@@ -84,6 +83,10 @@ public class Program
                 ci.SummatyList.Add(SummaryTypes.Min);
                 ci.SummatyList.Add(SummaryTypes.Max);
                 ci.SummatyList.Add(SummaryTypes.Average);
+            }
+            if (ci.ColumnName == "DBNameTest")
+            {
+                ci.Visible = false;
             }
             // формат заголовка столбца
             ci.FormatingHeader.FontBold = true;

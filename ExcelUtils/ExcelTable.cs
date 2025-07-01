@@ -111,15 +111,6 @@ namespace ExcelUtils
                     FormatingAplly(ColHeaderRange, ci.FormatingHeader);
                 }
 
-                // размер
-                if (ci.Width > 0)
-                    Sheet.Columns(ColIndex, ColIndex).Width = ci.Width;
-                else
-                    Sheet.Columns(ColIndex, ColIndex).AdjustToContents(1, 5, 150);
-
-                // видимость
-                if (!ci.Visible) Sheet.Columns(ColIndex, ColIndex).Hide();
-
                 // итоги столбцов
                 int scount = 0;
                 foreach (var s in ci.SummatyList)
@@ -132,9 +123,22 @@ namespace ExcelUtils
                     else if (s == SummaryTypes.Average) stext = "=\"Среднее: \"& AVERAGE({0})";
                     else continue;
                     IXLRange? xLRange = GetTableColumnRange(ColIndex);
-                    if (xLRange != null) Sheet.Cell(LastRowIndex + scount + 1, ColIndex).FormulaA1 = string.Format(stext, xLRange.ToString());
+                    if (xLRange != null)
+                    {
+                        Sheet.Cell(LastRowIndex + scount + 1, ColIndex).FormulaA1 = string.Format(stext, xLRange.ToString());
+                        Sheet.Cell(LastRowIndex + scount + 1, ColIndex).Style.Border.SetOutsideBorder(XLBorderStyleValues.Thin);
+                    }
                     scount++;
                 }
+
+                // размер
+                if (ci.Width > 0)
+                    Sheet.Columns(ColIndex, ColIndex).Width = ci.Width;
+                else
+                    Sheet.Columns(ColIndex, ColIndex).AdjustToContents(1, 5, 150);
+
+                // видимость
+                if (!ci.Visible) Sheet.Columns(ColIndex, ColIndex).Hide();
 
                 ColIndex += 1;
             }
