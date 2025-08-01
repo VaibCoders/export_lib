@@ -170,57 +170,27 @@ namespace ExcelUtils
                 string value1 = FormatConditionValue(cf.ConditionValue1);
                 string value2 = FormatConditionValue(cf.ConditionValue2);
 
-                switch (cf.ConditionOperator)
+                string formula = cf.ConditionOperator switch
                 {
-                    case Conditions.Equal:
-                        cond.WhenIsTrue($"{cellRef}={value1}");
-                        break;
-                    case Conditions.NotEqual:
-                        cond.WhenIsTrue($"{cellRef}<>{value1}");
-                        break;
-                    case Conditions.Greater:
-                        cond.WhenIsTrue($"{cellRef}>{value1}");
-                        break;
-                    case Conditions.Less:
-                        cond.WhenIsTrue($"{cellRef}<{value1}");
-                        break;
-                    case Conditions.GreaterOrEqual:
-                        cond.WhenIsTrue($"{cellRef}>={value1}");
-                        break;
-                    case Conditions.LessOrEqual:
-                        cond.WhenIsTrue($"{cellRef}<={value1}");
-                        break;
-                    case Conditions.Between:
-                        cond.WhenIsTrue($"AND({cellRef}>={value1},{cellRef}<={value2})");
-                        break;
-                    case Conditions.NotBetween:
-                        cond.WhenIsTrue($"OR({cellRef}<{value1},{cellRef}>{value2})");
-                        break;
-                    case Conditions.Contains:
-                        cond.WhenContains(value1.Trim('\"'));
-                        break;
-                    case Conditions.NotContains:
-                        cond.WhenNotContains(value1.Trim('\"'));
-                        break;
-                    case Conditions.BeginsWith:
-                        cond.WhenBeginsWith(value1.Trim('\"'));
-                        break;
-                    case Conditions.EndsWith:
-                        cond.WhenEndsWith(value1.Trim('\"'));
-                        break;
-                    case Conditions.ContainNulls:
-                        cond.WhenIsBlank();
-                        break;
-                    case Conditions.ContainNonNulls:
-                        cond.WhenIsNotBlank();
-                        break;
-                    case Conditions.ContainBlanks:
-                        cond.WhenIsBlank();
-                        break;
-                    case Conditions.ContainNonBlanks:
-                        cond.WhenIsNotBlank();
-                        break;
-                }
+                    Conditions.Equal => $"{cellRef}={value1}",
+                    Conditions.NotEqual => $"{cellRef}<>{value1}",
+                    Conditions.Greater => $"{cellRef}>{value1}",
+                    Conditions.Less => $"{cellRef}<{value1}",
+                    Conditions.GreaterOrEqual => $"{cellRef}>={value1}",
+                    Conditions.LessOrEqual => $"{cellRef}<={value1}",
+                    Conditions.Between => $"AND({cellRef}>={value1},{cellRef}<={value2})",
+                    Conditions.NotBetween => $"OR({cellRef}<{value1},{cellRef}>{value2})",
+                    Conditions.Contains => $"NOT(ISERROR(SEARCH({value1},{cellRef})))",
+                    Conditions.NotContains => $"ISERROR(SEARCH({value1},{cellRef}))",
+                    Conditions.BeginsWith => $"LEFT({cellRef},LEN({value1}))={value1}",
+                    Conditions.EndsWith => $"RIGHT({cellRef},LEN({value1}))={value1}",
+                    Conditions.ContainNulls or Conditions.ContainBlanks => $"LEN(TRIM({cellRef}))=0",
+                    Conditions.ContainNonNulls or Conditions.ContainNonBlanks => $"LEN(TRIM({cellRef}))>0",
+                    _ => string.Empty
+                };
+
+                if (!string.IsNullOrEmpty(formula))
+                    cond.WhenIsTrue(formula);
 
                 StyleApply(cond.Style, cf.Formating);
             } // условное форматирование таблицы
