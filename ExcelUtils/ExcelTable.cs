@@ -2,6 +2,7 @@
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using static ExcelUtils.TableInfo;
 
 namespace ExcelUtils
@@ -91,11 +92,10 @@ namespace ExcelUtils
 
             // Столбцы
             int ColIndex = FirstColumnIndex;
+            var widthOverrides = new Dictionary<int, double>();
             foreach (var ci in ti.Columns)
             {
                 IXLRange? ColRange = GetTableColumnRange(ColIndex);
-
-                IXLCell c = Sheet.Cell(FirstRowIndex, ColIndex);
 
                 // заголовки
                 if (ShowHeaders && !string.IsNullOrEmpty(ci.ColumnCaption))
@@ -133,9 +133,7 @@ namespace ExcelUtils
 
                 // размер
                 if (ci.Width > 0)
-                    Sheet.Columns(ColIndex, ColIndex).Width = ci.Width;
-                else
-                    Sheet.Columns(ColIndex, ColIndex).AdjustToContents(1, 5, 150);
+                    widthOverrides.Add(ColIndex, ci.Width);
 
                 // видимость
                 if (!ci.Visible) Sheet.Columns(ColIndex, ColIndex).Hide();
@@ -143,84 +141,88 @@ namespace ExcelUtils
                 ColIndex += 1;
             }
 
+            // ширина столбцов
+            Sheet.Columns(FirstColumnIndex, LastColumnIndex).AdjustToContents(1, 5, 150);
+            foreach (var w in widthOverrides)
+                Sheet.Column(w.Key).Width = w.Value;
+
             // условное форматирование таблицы
             foreach (ConditionFormattingTableInfo cf in ti.ConditionFormattings)
             {
-                Int32 r = 0;
-                foreach (DataRow row in Table.Rows)
+                if (!Table.Columns.Contains(cf.SourceColumn))
+                    continue;
+
+                int dataStart = ShowHeaders ? FirstRowIndex + 1 : FirstRowIndex;
+                int dataEnd = LastRowIndex;
+                int sourceIdx = Table.Columns.IndexOf(cf.SourceColumn) + FirstColumnIndex;
+
+                int targetIdx = cf.TargetColumn != null ? Table.Columns.IndexOf(cf.TargetColumn) : -1;
+                IXLRange targetRange;
+                if (targetIdx >= 0)
+                    targetRange = Sheet.Range(dataStart, targetIdx + FirstColumnIndex, dataEnd, targetIdx + FirstColumnIndex);
+                else
+                    targetRange = Sheet.Range(dataStart, FirstColumnIndex, dataEnd, LastColumnIndex);
+
+                var cond = targetRange.AddConditionalFormat();
+                string sourceLetter = Sheet.Column(sourceIdx).ColumnLetter();
+                string cellRef = "$" + sourceLetter + dataStart.ToString();
+
+                string value1 = FormatConditionValue(cf.ConditionValue1);
+                string value2 = FormatConditionValue(cf.ConditionValue2);
+
+                switch (cf.ConditionOperator)
                 {
-                    bool Found = false;
-                    if (!Table.Columns.Contains(cf.SourceColumn)) continue;
-                    var value = row[cf.SourceColumn];
-                    var value1 = cf.ConditionValue1;
-                    var value2 = cf.ConditionValue2;
+                    case Conditions.Equal:
+                        cond.WhenIsTrue($"{cellRef}={value1}");
+                        break;
+                    case Conditions.NotEqual:
+                        cond.WhenIsTrue($"{cellRef}<>{value1}");
+                        break;
+                    case Conditions.Greater:
+                        cond.WhenIsTrue($"{cellRef}>{value1}");
+                        break;
+                    case Conditions.Less:
+                        cond.WhenIsTrue($"{cellRef}<{value1}");
+                        break;
+                    case Conditions.GreaterOrEqual:
+                        cond.WhenIsTrue($"{cellRef}>={value1}");
+                        break;
+                    case Conditions.LessOrEqual:
+                        cond.WhenIsTrue($"{cellRef}<={value1}");
+                        break;
+                    case Conditions.Between:
+                        cond.WhenIsTrue($"AND({cellRef}>={value1},{cellRef}<={value2})");
+                        break;
+                    case Conditions.NotBetween:
+                        cond.WhenIsTrue($"OR({cellRef}<{value1},{cellRef}>{value2})");
+                        break;
+                    case Conditions.Contains:
+                        cond.WhenContains(value1.Trim('\"'));
+                        break;
+                    case Conditions.NotContains:
+                        cond.WhenNotContains(value1.Trim('\"'));
+                        break;
+                    case Conditions.BeginsWith:
+                        cond.WhenBeginsWith(value1.Trim('\"'));
+                        break;
+                    case Conditions.EndsWith:
+                        cond.WhenEndsWith(value1.Trim('\"'));
+                        break;
+                    case Conditions.ContainNulls:
+                        cond.WhenIsBlank();
+                        break;
+                    case Conditions.ContainNonNulls:
+                        cond.WhenIsNotBlank();
+                        break;
+                    case Conditions.ContainBlanks:
+                        cond.WhenIsBlank();
+                        break;
+                    case Conditions.ContainNonBlanks:
+                        cond.WhenIsNotBlank();
+                        break;
+                }
 
-                    switch (cf.ConditionOperator)
-                    {
-                        case Conditions.Equal: // Равно
-                            if (value == value1) Found = true;
-                            break;
-                        case Conditions.NotEqual: // Не равно
-                            if (value != value1) Found = true;
-                            break;
-                        case Conditions.Greater: // Больше
-                            if (value > value1) Found = true;
-                            break;
-                        case Conditions.Less: // Меньше
-                            if (value < value1) Found = true;
-                            break;
-                        case Conditions.GreaterOrEqual: // Больше или равно
-                            if (value >= value1) Found = true;
-                            break;
-                        case Conditions.LessOrEqual: // Меньше или равно
-                            if (value <= value1) Found = true;
-                            break;
-                        case Conditions.Between: // Между
-                            if (value >= value1 && value <= value2) Found = true;
-                            break;
-                        case Conditions.NotBetween: // Не между
-                            if (value < value1 || value > value2) Found = true;
-                            break;
-                        case Conditions.Contains: // Содержит
-                            if (((string)value).Contains(value1, StringComparison.CurrentCultureIgnoreCase)) Found = true;
-                            break;
-                        case Conditions.NotContains: // Не содержит
-                            if (!((string)value).Contains(value1, StringComparison.CurrentCultureIgnoreCase)) Found = true;
-                            break;
-                        case Conditions.BeginsWith: // Начинается с
-                            if (((string)value).StartsWith(value1, StringComparison.CurrentCultureIgnoreCase)) Found = true;
-                            break;
-                        case Conditions.EndsWith: // Оканчивается на
-                            if (((string)value).EndsWith(value1, StringComparison.CurrentCultureIgnoreCase)) Found = true;
-                            break;
-
-                        case Conditions.ContainNulls: // Равно Null
-                            if (row.IsNull(cf.SourceColumn)) Found = true;
-                            break;
-                        case Conditions.ContainNonNulls: // Не равно Null
-                            if (!row.IsNull(cf.SourceColumn)) Found = true;
-                            break;
-                        case Conditions.ContainBlanks: // Пусто
-                            if (value == null || string.IsNullOrEmpty(row[cf.SourceColumn].ToString())) Found = true;
-                            break;
-                        case Conditions.ContainNonBlanks: // Не пусто
-                            if (value != null && !string.IsNullOrEmpty(row[cf.SourceColumn].ToString())) Found = true;
-                            break;
-                    }
-
-                    if (Found)
-                    {
-                        Int32 TargetColIndex = Table.Columns.IndexOf(cf.TargetColumn);
-                        IXLRange? cr = null;
-                        Int32 H = ShowHeaders ? 1 : 0;
-                        if (TargetColIndex >= 0)
-                            cr = Sheet.Cell(r + FirstRowIndex + H, TargetColIndex + FirstColumnIndex).AsRange();
-                        else
-                            cr = GetTableRowRange(r);
-                        FormatingAplly(cr, cf.Formating);
-                    }
-                    r += 1;
-                } // цикл по строкам
+                StyleApply(cond.Style, cf.Formating);
             } // условное форматирование таблицы
 
             // группировка столбцов (делаем в самом конце, т.к. добавляются строки)
@@ -265,6 +267,34 @@ namespace ExcelUtils
                 cr.Style.NumberFormat.Format = Formating.NumberFormat;
             if (!string.IsNullOrEmpty(Formating.Formula))
                 cr.FormulaA1 = Formating.Formula;
+        }
+
+        private void StyleApply(IXLStyle style, FormatInfo? formating)
+        {
+            if (formating == null) return;
+            if (formating.Alignment == ColumnAlignment.General) style.Alignment.Horizontal = XLAlignmentHorizontalValues.General;
+            if (formating.Alignment == ColumnAlignment.Left) style.Alignment.Horizontal = XLAlignmentHorizontalValues.Left;
+            if (formating.Alignment == ColumnAlignment.Center) style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+            if (formating.Alignment == ColumnAlignment.Right) style.Alignment.Horizontal = XLAlignmentHorizontalValues.Right;
+            style.Fill.BackgroundColor = XLColor.FromColor(Color.FromArgb(formating.FillColor));
+            style.Font.Bold = formating.FontBold;
+            style.Font.FontColor = XLColor.FromColor(Color.FromArgb(formating.FontColor));
+            style.Font.Italic = formating.FontItalic;
+            style.Font.FontName = formating.FontName;
+            style.Font.FontSize = formating.FontSize;
+            style.Font.Strikethrough = formating.FontStrikethrough;
+            if (formating.FontUnderline)
+                style.Font.Underline = XLFontUnderlineValues.Single;
+            if (!string.IsNullOrEmpty(formating.NumberFormat))
+                style.NumberFormat.Format = formating.NumberFormat;
+        }
+
+        private static string FormatConditionValue(object? val)
+        {
+            if (val == null) return "\"\"";
+            if (val is string s) return $"\"{s}\"";
+            if (val is DateTime dt) return dt.ToOADate().ToString(System.Globalization.CultureInfo.InvariantCulture);
+            return Convert.ToString(val, System.Globalization.CultureInfo.InvariantCulture) ?? "\"\"";
         }
 
         private Dictionary<int, int> Groups = new();
